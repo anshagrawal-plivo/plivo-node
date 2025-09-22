@@ -35,6 +35,7 @@ export class Client {
     tollfreeVerification: TollfreeVerificationInterface;
     verify:VerifyInterface;
     verify_session:SessionInterface;
+    streaming: PlivoStreamManager;
     toJSON(...args: any[]): any;
 }
 /**
@@ -73,4 +74,5 @@ import { MaskingSessionInterface } from "../resources/maskingSession.js";
 import { TollfreeVerificationInterface } from "../resources/tollfree_verification.js";
 import { VerifyInterface } from "../resources/verifyCallerId.js";
 import { SessionInterface } from "../resources/verify.js";
+import { PlivoStreamManager } from "../streaming/stream-manager.js";
 
